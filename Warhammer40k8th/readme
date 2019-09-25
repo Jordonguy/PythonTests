@@ -1,2 +1,11 @@
 A set of functions written in python to help players of Warhammer 40k
 These functions help the players resolve parts of the game quickly that require them to roll a large amount of dice (50+ dice)
+I plan on creating three different small applications and then bring them all together with a GUI to allow the use of them.
+
+The three main parts of the application are:
+
+1. Rolling for hits - The user will input the number of attack they are making against a target and the firing units Balistic skill, it will then roll that many dice and any dice that meet the units Balistics skill will be successful
+
+2. Rolling for Wounds
+
+3. Rolling for Saves.
