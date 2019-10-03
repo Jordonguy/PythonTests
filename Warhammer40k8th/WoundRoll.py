@@ -17,13 +17,12 @@ successful_hits = int(
 wep_strength = int(input("Enter the attacking weapons Strength : "))
 #ap_modifer = int(input("Enter any AP modifiers : "))
 target_toughness = int(input("Enter the targets toughness : "))
-print(str(successful_hits) + " hits have been made against a target with " + str(target_toughness) +
-      " toughness with a weapon that has a strength of " + str(wep_strength))
-print("Now rolling " + str(successful_hits) + " dice!.....")
+print(f"{successful_hits} hits have been made against a target with {target_toughness} toughness with a weapon that has a strength of {wep_strength}")
+print(f"Now rolling {successful_hits} dice!.....")
 
 while(successful_hits > 0):
     random_num = random.randint(1, 6)
-    print(str(random_num) + " was rolled")
+    print(f"{random_num} was rolled")
     if(random_num == 1):
         print("The hit failed to wound the target")
         failed_wounds += 1
@@ -46,5 +45,5 @@ while(successful_hits > 0):
         print("The hit failed to wound the target")
         failed_wounds += 1
     successful_hits -= 1
-print(str(successful_wounds) + " shots successfully wounded the target")
-print(str(failed_wounds) + " failed to wound the target")
+print(f"{successful_wounds} shots successfully wounded the target")
+print(f"{successful_hits} failed to wound the target")
