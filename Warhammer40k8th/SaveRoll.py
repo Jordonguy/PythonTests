@@ -10,13 +10,6 @@ successful_damage = 0
 
 while(save_rolls > 0):
     random_num = random.randint(1, 6)
-    saveRoll()
-    save_rolls -= 1
-
-def saveRoll(random_num, save_stat, ap_stat):
-    """ A method of determining the outcome of a save roll"""
     if(random_num >= (save_stat - ap_stat)):
         successful_damage += 1
-
-
-    return
+    save_rolls -= 1
